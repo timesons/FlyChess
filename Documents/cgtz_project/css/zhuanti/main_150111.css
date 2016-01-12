@@ -1,0 +1,139 @@
+body{font: 12px/1.6 'Microsoft YaHei','Hiragino Sans GB',Tahoma,Verdana,arial,sans-serif;}
+body,p,div,h1,h2,h3,h4,ul,li,dl,dt,dd,img,span,table,tr,td,th,hr,form,ol,tt,iframe,header,article,footer,tt{ margin:0px; padding:0px;}
+img{ border:none; vertical-align:middle;}
+a, input, abbr, acronym, address, applet, b, big, blockquote, body, caption, center, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, u, ul, var, button, select {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    /*vertical-align: baseline;*/
+    background: 0 0;
+    box-sizing: content-box;
+    text-decoration:none;
+    color: #666666;
+}
+ul,li,ol{ list-style:none; margin: 0; padding: 0;}
+em,i,address{font-style:normal;}
+.clearfix{zoom:1;display:block}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+input::-ms-clear, input::-ms-clear{ display: none;}
+/*reset*/
+i{font-style: normal; color: #fb6459;}
+.warpper{}
+.container{ max-width:1920px; position: relative;}
+.main01{ background: url("../../img/flyChess_pc/bg_01.jpg") top center no-repeat;height: 1484px; position: relative;}
+.main02{ background: url("../../img/flyChess_pc/bg_02.jpg") top center no-repeat;height: 1116px;}
+.header01{ background: url("../../img/flyChess_pc/hd_01.jpg") top center no-repeat;width:1000px; height: 1484px; margin: 0 auto;position: relative;}
+.header02{ background: url("../../img/flyChess_pc/hd_02.jpg") top center no-repeat;width:1000px; height: 1116px; margin: 0 auto; position: relative;}
+.float_bar{width:180px; height: 400px; float:right; position: fixed; bottom:10px; right:10px; background: url("../../img/flyChess_pc/float_bar.png") no-repeat;
+z-index: 99;}
+.header01 .gif{ position: absolute; top:340px; left:186px; width: 150px;}
+.header01 p.tips{ width: 300px; position: absolute; top:580px; left:350px; color: #a8efff; font-size: 14px;}
+.header01 p.time_tips{position: absolute; top:317px; left:270px; color: #a8efff; font-size: 14px; color: #004e79; font-weight: bold;}
+
+.float_bar ul{ overflow: hidden; margin: 25px 18px;}
+.float_bar ul li{ float: left; font-size: 14px; text-align: center;width:142px; height: 30px; line-height: 30px;
+    margin-bottom:20px; color: #666666;}
+.float_bar ul li i{font-style: normal; color: #fb6459;}
+.float_bar .shaizi_btn{ width:150px; height:150px;display: block; margin: -19px 0 0 14px; border-radius:100px; text-indent: -999em;}
+.shanzi_gif{ width:105px; position: absolute;    top: 256px;  left:37px; display: none;}
+
+
+.hd_showbox,.jl_showbox{ width: 540px;border: 1px solid #e3e3e3; position:fixed; top:50%; left: 50%; margin:-220px 0 0 -270px;
+    background-color: #fff; padding: 20px; display: none; z-index: 101;}
+.h2{ font-size: 18px; text-align: center;}
+.des_cont{ border: 1px solid #e3e3e3; margin-top: 20px; padding: 20px;}
+.hd_showbox .des_cont p{line-height:25px; font-size: 14px;}
+.hd_showbox a.btn,.jl_showbox a.btn{ width: 300px;height:40px; border-radius:3px; background-color: #fb6459; display: block; text-align: center;line-height: 40px;
+    font-size:16px; color: #fff; margin: 20px auto 0;}
+.hd_showbox a.close,.jl_showbox a.close{ display: block; width:19px; height: 19px; position: absolute; right: 20px; top:20px; background: url("../../img/flyChess_pc/close.png") no-repeat;}
+
+.jl_showbox{font-size: 14px;}
+.jl_showbox .des_cont ul{ overflow: hidden;}
+.jl_showbox .des_cont ul li{ float: left;line-height:30px;}
+.jl_showbox .des_cont ul li span{ display: inline-block; height: 30px; line-height: 30px;}
+.jl_showbox .des_cont ul li .time em{margin-left: 10px;}
+.jl_showbox .des_cont ul li .details{ margin-left:60px;display: inline-block;  width: 200px;  height: 25px;white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis;}
+.jl_showbox .des_cont ul li .number{ margin-left: 30px;}
+.jl_showbox .des_cont .title span{font-weight: bolder;}
+.jl_showbox .des_cont p span.details{ margin-left:196px;}
+.jl_showbox .des_cont p span.number{ margin-left: 165px;}
+
+.jl_showbox_null{border: 1px solid #e3e3e3; position:fixed; width: 400px; top:50%; left: 50%; margin:-200px 0 0 -270px;
+    background-color: #fff; padding: 20px; display: block; z-index: 101; display: none;}
+.jl_showbox_null a.btn{ width: 300px;height:40px; border-radius:3px; background-color: #fb6459; display: block; text-align: center;line-height: 40px;
+    font-size:16px; color: #fff; margin: 20px auto 0;}
+.jl_showbox_null .cont_main{ text-align: center; border: 1px solid #cccccc; min-width: 200px; font-size: 14px; padding: 30px;}
+.jl_showbox_null a.close{ display: block; width:19px; height: 19px; position: absolute; right: 20px; top:20px; background: url("../../img/flyChess_pc/close.png") no-repeat;}
+
+
+.alert_box,.alert_box03{ font-size: 16px; background-color: #fff; border-radius: 3px; position:fixed;
+top:20%; left: 50%; margin-left: -152px; z-index:100; color: #000; text-align: center; padding:50px 50px 80px;
+display: none;}
+.alert_box p,.alert_box03 p{ max-width: 220px;}
+.alert_box a,.alert_box03 a{display: block; position: absolute; left:0; bottom: 0; background-color: #fb6459; height:30px; width: 100%;
+border-radius: 0 0 3px 3px; line-height: 30px; color: #fff;}
+
+
+.alert_box02{font-size: 16px; background-color: #fff; border-radius: 3px; position:fixed;
+    top:20%; left: 50%; margin-left: -152px; z-index:100; color: #000; text-align: center; overflow: hidden; display: none;}
+.alert_box02 p{padding: 30px; max-width: 220px;}
+.alert_box02 a{display: block;background-color: #fb6459; height:30px; width: 45%;line-height: 30px; color: #fff; float: left}
+.alert_box02 a.a2{float: right;}
+
+
+
+.paomadeng{padding: 80px 0 0 220px; *margin: 100px 0 0 220px; *position:relative;}
+/*.paomadeng ul{ overflow: hidden; width:600px;position: relative;}*/
+/*.paomadeng ul li{ float: left; border: 3px solid #fff; margin: 2px; position:relative;}*/
+/*.paomadeng ul li.start{ border:none;padding: 54px 53px 0 53px;}*/
+/*.paomadeng ul li.start a:hover{opacity: 0.9;}*/
+/*.paomadeng ul li.last{position: absolute; left: 0; top: 220px;}*/
+/*.paomadeng ul li em{position: absolute; display: block; background-color: #000; opacity: 0.4;width: 100%; height: 100%;*/
+    /*top:0; color: #fff; text-align: center;display: none;}*/
+/*.paomadeng ul li em b{ padding: 30px 10px; display: block;*/
+    /*color: #fff; text-align: center;}*/
+
+.href_btn{overflow: hidden; position: absolute; left:334px; bottom: 13px;}
+.href_btn a{ display: block; float: left; width:150px; height: 40px;text-indent:-999em;}
+.href_btn a.btn_02{ margin-left: 22px;}
+
+.choujiang_ico{position: absolute; top: 242px;  *top: 262px; left: 380px; display: none;}
+.bg_color{ background-color: #666666; opacity: 0.8; filter:alpha(opacity=80); position: fixed; width: 100%; height: 100%;z-index: 100; top:0; left: 0;
+display:none;}
+
+
+td{border:3px solid #ccc;text-align:center;vertical-align:middle; position: relative;}
+td em{position: absolute; display: block; background-color: #000; opacity: 0.4; filter:alpha(opacity=40); width: 100%; height: 100%;
+top:0; color: #fff; text-align: center;display: none;}
+td em b{ padding: 30px 10px; display: block;
+color: #fff; text-align: center;}
+
+
+
+.start_btn{border: none;margin-top: -272px;margin-left: 380px; position: absolute; background: url("../../img/flyChess_pc/pmd/start.png") no-repeat;
+width: 220px; height: 110px; cursor: pointer;}
+.start_btn:hover{opacity: 0.9; filter:alpha(opacity=90);}
+
+
+.bottom_tips{margin-top:50px;text-align:center;}
+.bottom_tips h1{ font-size: 20px; line-height:40px;  color: #a1e7f8;}
+.bottom_tips p{ color: #a1e7f8;line-height: 25px;}
+.copyright_p{text-align: center; color: #458aa8; margin-top: 300px;}
+
+.tuzi{position: absolute ;top: 563px; left: 210px;}
+.tuzi em{width: 100px;height:100px;display: block;position: absolute; text-indent: -999em;}
+.tuzi em.em1{top:0; left:0;}
+.tuzi em.em2{top:130px; left:23px;}
+.tuzi em.em3{top:148px; left:145px;}
+.tuzi em.em4{top:148px; left:260px;}
+.tuzi em.em5{top:148px; left:375px;}
+.tuzi em.em6{top:170px; left:500px;}
+.tuzi em.em7{top:315px; left:500px;}
+.tuzi em.em8{top:330px; left:375px;}
+.tuzi em.em9{top:357px; left:247px;}
+.tuzi em.em10{top:500px; left:247px;}
+.tuzi em.em11{top:518px; left:376px;}
+.tuzi em.em12{top:540px; left:500px;}
+.tuzi em.em13{top:680px; left:500px;}
+.tuzi em.em14{top:701px; left:376px;}
+.tuzi em.em15{top:701px; left:260px;}

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>棋开得胜好礼冲刺,开门迎春金猴送礼!</title>
+    <link type="text/css" rel="stylesheet" href="../../css/zhuanti/main_150111.css">
+    <script src="https://www.cgtz.com/fassets/jquery.min.js"></script>
+</head>
+<body>
+<div class="warpper">
+    <div class="container">
+        <div class="main01">
+            <div class="header01">
+                <div class="float_bar">
+                    <ul>
+                        <li>我的骰子: <i>3</i>个</li>
+                        <li>抽奖次数: <i>1</i>次</li>
+                        <li><a href="javascript:;" class="li3" title="查看奖励">查看奖励</a></li>
+                        <li><a href="javascript:;" class="li4" title="活动说明">活动说明</a></li>
+                    </ul>
+                    <a href="javascript:;" class="shaizi_btn">摇骰子</a>
+                    <img src="../../img/flyChess_pc/shaizi.gif" class="shanzi_gif">
+                </div>
+                <form style="position: absolute; top:500px; left:400px;">
+                    <input id="shaizi_shuzi" value="5" type="text" />
+                    <input type="button" value="骰子数字" class="shuzi_btn" onclick="Start()" style=" background-color: #fff;"/>
+                </form>
+                <form style="position: absolute; top:530px; left:400px;">
+                    <input id="tuzi_weizhi" value="5" type="text" />
+                    <input type="button" value="兔子位置" class="tuzi_btn" onclick="Start()" style=" background-color: #fff;"/>
+                </form>
+
+                <img src="../../img/flyChess_pc/gif.gif" class="gif">
+                <div class="tuzi">
+                    <em class="em1">5元红包</em>
+                    <em class="em2">前进一步</em>
+                    <em class="em3">1元红包</em>
+                    <em class="em4">1元红包</em>
+                    <em class="em5">获得一次抽奖机会</em>
+                    <em class="em6">1元红包</em>
+                    <em class="em7">0.5%年化券</em>
+                    <em class="em8">1元红包</em>
+                    <em class="em9">跳到第13步</em>
+                    <em class="em10">1元红包</em>
+                    <em class="em11">0.3%年化券</em>
+                    <em class="em12">8元红包</em>
+                    <em class="em13">1元红包</em>
+                    <em class="em14">后退一步</em>
+                    <em class="em15">1元红包</em>
+                </div>
+                <p class="tips">草根理财版飞行棋上线啦！投资来摇骰，独乐乐不如众乐乐，邀请好友还有更多机会。草根壕！礼！已备好，看谁最快飞跃终点，旗开得胜~</p>
+                <p class="time_tips">1月12日00:00—1月24日24:00</p>
+                <div class="href_btn">
+                    <a href="JavaScript:;" class="btn_01" title="立即投资">立即投资</a>
+                    <a href="JavaScript:;" class="btn_02" title="立即推荐">立即推荐</a>
+                </div>
+
+            </div>
+            <div class="hd_showbox">
+                <a href="JavaScript:;" class="close"></a>
+                <h2 class="h2">活动说明</h2>
+                <div class="des_cont">
+                    <p>活动期间，新增投资者及推荐好友注册投资均可参与草根飞行棋，到达终点者可获得1次抽奖机会。</p>
+                    <p> 1、新增投资项目≥30天，单笔投资金额2000元，可获得1次摇骰子机会；单笔投资4000即可获得2次摇骰子机会，以此类推。<i>（投资钱包、转让项目不参加）</i></p>
+                    <P>2、成功推荐好友注册并首投<i>（首次投资草根钱包不参加）</i>，可获得1次摇骰子机会，上限3次。</P>
+                    <p><i>注：骰子摇出的数字代表往前进几步，再领取对应步数的奖励或者惩罚。</i></p>
+                    <p style="margin-top: 20px;">例：活动期间，小草单笔投资4000元，且推荐一位好友注册并首投，获得3次摇骰子机会，分别摇到数字5、6、5，到达终点且获得2次抽奖机会、0.3%年化券、1元红包。</p>
+                </div>
+                <a href="javascript:;" class="btn">确定</a>
+            </div>
+
+            <div class="jl_showbox">
+                <a href="JavaScript:;" class="close"></a>
+                <h2 class="h2">我的奖励</h2>
+                <div class="des_cont">
+                    <p class="title"><span class="time">时间</span><span class="details">奖励明细</span><span class="number">数量</span></p>
+                    <ul>
+                        <li><span class="time">2016/01/12<em>00:00:00:00</em></span><span class="details">小米手环</span><span class="number">1</span></li>
+                        <li><span class="time">2016/01/12<em>00:00:00:00</em></span><span class="details">小米手环</span><span class="number">1</span></li>
+                        <li><span class="time">2016/01/12<em>00:00:00:00</em></span><span class="details">小米手环</span><span class="number">1</span></li>
+                        <li><span class="time">2016/01/12<em>00:00:00:00</em></span><span class="details">小米手环</span><span class="number">1</span></li>
+                        <li><span class="time">2016/01/12<em>00:00:00:00</em></span><span class="details">小米手环</span><span class="number">1</span></li>
+                        <li><span class="time">2016/01/12<em>00:00:00:00</em></span><span class="details">小米手环</span><span class="number">1</span></li>
+                        <li><span class="time">2016/01/12<em>00:00:00:00</em></span><span class="details">小米手环</span><span class="number">1</span></li>
+                    </ul>
+                </div>
+                <a href="javascript:;" class="btn">确定</a>
+            </div>
+
+            <div class="jl_showbox_null">
+                <a href="JavaScript:;" class="close"></a>
+                <h2 class="h2">我的奖励</h2>
+                <div class="cont_main">
+                    <p>亲爱的草粉</p>
+                    <p>您暂时还未获得奖励哦!</p>
+                </div>
+                <a href="javascript:;" class="btn">确定</a>
+            </div>
+
+
+
+            <div class="alert_box">
+                <p>恭喜您,获得<em>一次抽奖机会</em>!</p>
+                <a href="JavaScript:;">我知道了</a>
+            </div>
+
+            <div class="alert_box02">
+                <p>爱的草粉，恭喜您到达终点，获得1次抽奖机会。</p>
+                <a href="jacascript:;">立即抽奖</a><a href="jacascript:;" class="a2">继续飞行</a>
+            </div>
+
+            <div class="alert_box03">
+                <p>爱的草粉，恭喜您到达终点，获得1次抽奖机会。</p>
+                <a href="jacascript:;">立即抽奖</a><a href="jacascript:;" class="a2">继续飞行</a>
+            </div>
+
+        </div>
+        <div class="main02">
+            <div class="header02">
+                <table class="paomadeng" id="tb">
+                    <tr>
+                        <td><img src="../../img/flyChess_pc/pmd/jp_ico_01.jpg"><em><b>30积分</b></em></td>
+                        <td><img src="../../img/flyChess_pc/pmd/jp_ico_02.jpg"><em><b>科沃斯智能扫地机器人</b></em></td>
+                        <td><img src="../../img/flyChess_pc/pmd/jp_ico_03.jpg"><em><b>小米血压计</b></em></td>
+                        <td><img src="../../img/flyChess_pc/pmd/jp_ico_04.jpg"><em><b>小米随身WiFi U盘</b></em></td>
+                        <td><img src="../../img/flyChess_pc/pmd/jp_ico_05.jpg"><em><b>小米移动电源 10000mAh</b></em></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../../img/flyChess_pc/pmd/jp_ico_06.jpg"><em><b>小米手环</b></em></td>
+                        <td style="visibility: hidden"></td>
+                        <td style="visibility: hidden"></td>
+                        <td style="visibility: hidden"></td>
+                        <td><img src="../../img/flyChess_pc/pmd/jp_ico_07.jpg"><em><b>京东100元购物卡</b></em></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../../img/flyChess_pc/pmd/jp_ico_13.jpg"><em><b>谢谢参与</b></em></td>
+                        <td style="visibility: hidden"></td>
+                        <td style="visibility: hidden"></td>
+                        <td style="visibility: hidden"></td>
+                        <td><img src="../../img/flyChess_pc/pmd/jp_ico_14.jpg"><em><b>5元红包</b></em></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../../img/flyChess_pc/pmd/jp_ico_08.jpg"><em><b>华为荣耀6plus</b></em></td>
+                        <td><img src="../../img/flyChess_pc/pmd/jp_ico_09.jpg"><em><b>小米note顶配版</b></em></td>
+                        <td><img src="../../img/flyChess_pc/pmd/jp_ico_10.jpg"><em><b>Ipad mini 2</b></em></td>
+                        <td><img src="../../img/flyChess_pc/pmd/jp_ico_11.jpg"><em><b>Iphone 6s</b></em></td>
+                        <td><img src="../../img/flyChess_pc/pmd/jp_ico_12.jpg"><em><b>小米平板2</b></em></td>
+                    </tr>
+                </table>
+                <input id="txtnum" value="13" type="text" style="position: absolute" />
+                <input type="button" class="start_btn" onclick="StartGame()" />
+                <img src="../../img/flyChess_pc/pmd/start.png" class="choujiang_ico" >
+                <div class="bottom_tips">
+                    <h1>温馨提示</h1>
+                    <p>所获券类奖励即刻发至您的草根账户，有效期7天。
+                    <p>实物奖励将在活动结束后20个工作日内发出，请将收货地址发至指定邮箱：<i>service@cgtz.com</i>，</p>
+                    <p>中奖账号：13XXXXXXXXX，收货人姓名：XXX，收货人手机号：13XXXXXXXXX，</p>
+                    <p>收货地址：XX省XX市XXXXX。</p>
+                </div>
+                <p class="copyright_p">本活动最终解释权归浙江草根网络科技有限公司所有</p>
+            </div>
+        </div>
+        <div class="bg_color"></div>
+    </div>
+</div>
+<script>
+    $(".float_bar .li4").click(function(){
+        $(".bg_color").show();
+        $(".hd_showbox").show();
+    })
+    $(".hd_showbox .close").click(function(){
+        $(".bg_color").hide();
+        $(".hd_showbox").hide();
+    })
+    $(".hd_showbox .btn").click(function(){
+        $(".bg_color").hide();
+        $(".hd_showbox").hide();
+    })
+    //活动说明
+
+    $(".float_bar .li3").click(function(){
+        $(".bg_color").show();
+        $(".jl_showbox").show();
+    })
+    $(".jl_showbox .close").click(function(){
+        $(".bg_color").hide();
+        $(".jl_showbox").hide();
+    })
+
+    $(".jl_showbox .btn").click(function(){
+        $(".bg_color").hide();
+        $(".jl_showbox").hide();
+    })
+    //查看奖品
+
+    $('.paomadeng td').mouseover(function(){
+        $(this).find('em').css('display','block')
+    })
+    $('.paomadeng td').mouseleave(function(){
+        $(this).find('em').css('display','none')
+    })
+    //鼠标移入移出查看奖品名称
+
+    $(".shaizi_btn").click(function(){
+        $(".shanzi_gif")[0].src="../../img/flyChess_pc/shaizi.gif";
+        $(".shanzi_gif").show();
+    })
+    //点击按钮筛子gif出现
+
+    $(".alert_box a").click(function(){
+        $(".alert_box").hide();
+    })
+
+
+
+</script>
+<!--<script src="js/tuzi.js"></script>-->
+<script>
+    function tuzi_reset(){
+        $(".gif").css("left","186px")
+        $(".gif").css("top","340px")
+    }
+    tuzi_reset()
+    //兔子位置复位
+    
+
+    function TuZi()
+    {
+        this.$img=$(".gif")[0];
+        this.$img.style.position="absolute";
+        this.currentStep=0;
+        this.targetStep=0;
+        this.startPosition=[190,493];
+        this.shifts=[[0,0],[23,130],[145,148],[260,148],[375,148],[500,170],[500,315],[375,330],[247,357],[247,500],[376,518],[500,540],[500,680],[376,701],[260,701]];
+        this.maxStep=this.shifts.length;
+        this.StepFinishCallback=null;
+    }
+
+    TuZi.prototype.StepTo=function(index)
+    {
+        var tempObj = this;
+
+        if(index<=1)
+            index=1;
+        if(index>=this.maxStep)
+            index=this.maxStep;
+        this.targetStep = index;
+        if(this.currentStep==this.targetStep)
+            return;
+
+        if(this.currentStep<this.targetStep)
+            this.StepNext();
+        else
+            this.StepPrev();
+    }
+
+    TuZi.prototype.StepNext=function()
+    {
+        var tempObj = this;
+
+        this.currentStep++;
+        this.JumpTo(this.currentStep);
+        window.setTimeout(function() {
+            if(tempObj.currentStep<tempObj.targetStep)
+                tempObj.StepNext();
+            else
+            //require next step
+            if(tempObj.StepFinishCallback != null)
+                tempObj.StepFinishCallback();
+        }, 1000);
+    }
+
+    TuZi.prototype.StepPrev=function()
+    {
+        var tempObj = this;
+
+        this.currentStep--;
+        this.JumpTo(this.currentStep);
+        window.setTimeout(function() {
+            if(tempObj.currentStep>tempObj.targetStep)
+                tempObj.StepPrev();
+            else
+            //require next step
+            if(tempObj.StepFinishCallback != null)
+                tempObj.StepFinishCallback();
+        }, 1000);
+    }
+
+    TuZi.prototype.JumpTo=function(step)
+    {
+        this.$img.style.left = this.startPosition[0] + this.shifts[step-1][0] + "px";
+        this.$img.style.top = this.startPosition[1] + this.shifts[step-1][1] + "px";
+    }
+
+    $('.shuzi_btn').click(function(){
+        var shuzi;
+        shuzi = parseInt(Trim(document.getElementById("shaizi_shuzi").value));
+        $(".shanzi_gif")[0].src="../../img/flyChess_pc/shanzi_0" + shuzi + ".png";
+    })
+
+    var _tuzi;
+    _tuzi = new TuZi();
+    _tuzi.StepFinishCallback = function(){
+        $(".shanzi_gif").hide();
+        $(".shanzi_gif")[0].src="../../img/flyChess_pc/shaizi.gif";
+        $(".alert_box").show();
+        $(".alert_box em").html($(".tuzi .em" + _tuzi.targetStep).html());
+    }
+
+    $('.tuzi_btn').click(function(){
+        var step;
+        step = parseInt(Trim(document.getElementById("tuzi_weizhi").value));
+        _tuzi.StepTo(step);
+    })
+
+
+
+</script>
+<script>
+    /*
+     * 删除左右两端的空格
+     */
+    function Trim(str){
+        return str.replace(/(^\s*)|(\s*$)/g, "");
+    }
+
+    /*
+     * 定义数组
+     */
+    function GetSide(m,n){
+        //初始化数组
+        var arr = [];
+        for(var i=0;i<m; i++){
+            arr.push([]);
+            for(var j=0;j<n;j++){
+                arr[i][j]=i*n+j;
+            }
+        }
+        //获取数组最外圈
+        var resultArr=[];
+        var tempX=0,
+                tempY=0,
+                direction="Along",
+                count=0;
+        while(tempX>=0 && tempX<n && tempY>=0 && tempY<m && count<m*n)
+        {
+            count++;
+            resultArr.push([tempY,tempX]);
+            if(direction=="Along"){
+                if(tempX==n-1)
+                    tempY++;
+                else
+                    tempX++;
+                if(tempX==n-1&&tempY==m-1)
+                    direction="Inverse"
+            }
+            else{
+                if(tempX==0)
+                    tempY--;
+                else
+                    tempX--;
+                if(tempX==0&&tempY==0)
+                    break;
+            }
+        }
+        return resultArr;
+    }
+
+    var index=0,           //当前亮区位置
+            prevIndex=0,          //前一位置
+            Speed=300,           //初始速度
+            Time,            //定义对象
+            arr = GetSide(4,5),         //初始化数组
+            EndIndex=0,           //决定在哪一格变慢
+            tb = document.getElementById("tb"),     //获取tb对象
+            cycle=0,           //转动圈数
+            EndCycle=0,           //计算圈数
+            flag=false,           //结束转动标志
+            quick=0;           //加速
+
+
+    function StartGame(){
+        cycle=0;
+        flag=false;
+        EndIndex=Math.floor(Math.random()*14);
+        //EndCycle=Math.floor(Math.random()*4);
+        EndCycle=1;
+        Time = setInterval(Star,Speed);
+//        $(".start_btn").addClass('disabled')
+        $(".choujiang_ico").show();
+
+    }
+
+    function Star(num){
+        //跑马灯变速
+        if(flag==false){
+            //走五格开始加速
+            if(quick==5){
+                clearInterval(Time);
+                Speed=50;
+                Time=setInterval(Star,Speed);
+            }
+            //跑N圈减速
+            if(cycle==EndCycle+1 && index==EndIndex){
+                clearInterval(Time);
+                Speed=300;
+                flag=true;         //触发结束
+                Time=setInterval(Star,Speed);
+            }
+        }
+
+        if(index>=arr.length){
+            index=0;
+            cycle++;
+        }
+
+        //结束转动并选中号码
+        if(flag==true && index==parseInt(Trim(document.getElementById("txtnum").value))-1){
+            quick=0;
+            clearInterval(Time);
+            $(".choujiang_ico").hide();
+            $(".alert_box").show();
+            $(".alert_box em").html($(".paomadeng td em b" + index).html());
+
+        }
+
+
+        tb.rows[arr[index][0]].cells[arr[index][1]].style.border="3px solid #fb6459";
+        if(index>0)
+            prevIndex=index-1;
+        else{
+            prevIndex=arr.length-1;
+        }
+        tb.rows[arr[prevIndex][0]].cells[arr[prevIndex][1]].style.border="3px solid #e3e3e3";
+        index++;
+        quick++;
+
+    }
+
+    /*
+     window.onload=function(){
+     Time = setInterval(Star,Speed);
+     }
+     */
+
+</script>
+</body>
+</html>
