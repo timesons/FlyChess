@@ -106,7 +106,7 @@
 
             <div class="alert_box02">
                 <p>爱的草粉，恭喜您到达终点，获得1次抽奖机会。</p>
-                <a href="jacascript:;">立即抽奖</a><a href="jacascript:;" class="a2">继续飞行</a>
+                <a href="jacascript:;" class="ljcj">立即抽奖</a><a href="jacascript:;" class="a2 jxfx">继续飞行</a>
             </div>
 
             <div class="alert_box03">
@@ -209,8 +209,45 @@
 
     $(".alert_box a").click(function(){
         $(".alert_box").hide();
+    });
+//
+
+    $(".jxfx").click(function(){
+        $("html, body").animate({ scrollTop:300}, 120);
+        $(".alert_box02").hide();
+    })
+    //继续飞行
+
+    $(".ljcj").click(function(){
+        $.fn.scrollBottom = function(scroll){
+            if(typeof scroll === 'number'){
+                window.scrollTo(0,$(document).height() - $(window).height() - scroll);
+                return $(document).height() - $(window).height() - scroll;
+            } else {
+                return $(document).height() - $(window).height() - $(window).scrollTop();
+            }
+        }
+        $(window).scrollBottom(500);
+        $(".alert_box02").hide();
     })
 
+    //立即抽奖
+
+//    (function() {
+//        var $backToTopTxt = "返回顶部", $backToTopEle = $('<div class="backToTop"></div>').appendTo($("body"))
+//                .text($backToTopTxt).attr("title", $backToTopTxt).click(function() {
+//                    $("html, body").animate({ scrollTop: 0 }, 120);
+//                }), $backToTopFun = function() {
+//            var st = $(document).scrollTop(), winh = $(window).height();
+//            (st > 0)? $backToTopEle.show(): $backToTopEle.hide();
+//            //IE6下的定位
+//            if (!window.XMLHttpRequest) {
+//                $backToTopEle.css("top", st + winh - 166);
+//            }
+//        };
+//        $(window).bind("scroll", $backToTopFun);
+//        $(function() { $backToTopFun(); });
+//    })();
 
 
 </script>
