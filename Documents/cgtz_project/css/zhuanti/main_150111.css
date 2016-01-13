@@ -52,11 +52,12 @@ z-index: 99;}
 .jl_showbox .des_cont ul li{ float: left;line-height:30px;}
 .jl_showbox .des_cont ul li span{ display: inline-block; height: 30px; line-height: 30px;}
 .jl_showbox .des_cont ul li .time em{margin-left: 10px;}
-.jl_showbox .des_cont ul li .details{ margin-left:60px;display: inline-block;  width: 200px;  height: 25px;white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis;}
+.jl_showbox .des_cont ul li .details{ margin-left:86px;display: inline-block;  width:180px;  height: 25px;white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis;
+    overflow: hidden;}
 .jl_showbox .des_cont ul li .number{ margin-left: 30px;}
 .jl_showbox .des_cont .title span{font-weight: bolder;}
 .jl_showbox .des_cont p span.details{ margin-left:196px;}
-.jl_showbox .des_cont p span.number{ margin-left: 165px;}
+.jl_showbox .des_cont p span.number{ margin-left:145px;}
 
 .jl_showbox_null{border: 1px solid #e3e3e3; position:fixed; width: 400px; top:50%; left: 50%; margin:-200px 0 0 -270px;
     background-color: #fff; padding: 20px; display: block; z-index: 101; display: none;}
