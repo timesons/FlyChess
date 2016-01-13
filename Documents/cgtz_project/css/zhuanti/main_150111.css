@@ -48,7 +48,7 @@ z-index: 99;}
 .hd_showbox a.close,.jl_showbox a.close{ display: block; width:19px; height: 19px; position: absolute; right: 20px; top:20px; background: url("../../img/flyChess_pc/close.png") no-repeat;}
 
 .jl_showbox{font-size: 14px;}
-.jl_showbox .des_cont ul{ overflow: hidden;}
+.jl_showbox .des_cont ul{height: 200px; overflow-y: auto;}
 .jl_showbox .des_cont ul li{ float: left;line-height:30px;}
 .jl_showbox .des_cont ul li span{ display: inline-block; height: 30px; line-height: 30px;}
 .jl_showbox .des_cont ul li .time em{margin-left: 10px;}
@@ -74,12 +74,12 @@ display: none;}
 border-radius: 0 0 3px 3px; line-height: 30px; color: #fff;}
 
 
-.alert_box02{font-size: 16px; background-color: #fff; border-radius: 3px; position:fixed;
+.alert_box02,.alert_box06{font-size: 16px; background-color: #fff; border-radius: 3px; position:fixed;
     top:20%; left: 50%; margin-left: -152px; z-index:100; color: #000; text-align: center; overflow: hidden; display:none;
     padding: 10px}
-.alert_box02 p{padding: 30px;width: 220px;}
-.alert_box02 a{display: block;background-color: #fb6459; height:30px; width: 45%;line-height: 30px; color: #fff; float: left}
-.alert_box02 a.a2{float: right;}
+.alert_box02 p,.alert_box06 p{padding: 30px;width: 220px;}
+.alert_box02 a,.alert_box06 a{display: block;background-color: #fb6459; height:30px; width: 45%;line-height: 30px; color: #fff; float: left}
+.alert_box02 a.a2,.alert_box06 a.a2{float: right;}
 
 
 
